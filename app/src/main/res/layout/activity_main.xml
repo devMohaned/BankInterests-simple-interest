@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/edittexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/investment"
+            style="@style/NumberedStyle"
+            android:hint="@string/investment" />
+
+        <EditText
+            android:id="@+id/interest_rate"
+            style="@style/NumberedStyle"
+            android:inputType="numberDecimal"
+            android:hint="@string/interest_rate" />
+
+
+        <EditText
+            android:id="@+id/time"
+            style="@style/NumberedStyle"
+            android:hint="@string/period"
+            android:maxLength="2" />
+
+        <Button
+            android:id="@+id/make_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/make_chart" />
+
+
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wealth"
+        android:layout_below="@id/edittexts" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/wealth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/after_year"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/gained_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <TextView
+            android:id="@+id/new_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

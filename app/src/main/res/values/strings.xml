@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BankInterests</string>
+    <string name="dash">-</string>
+    <string name="investment">Investment</string>
+    <string name="interest_rate">Interests Rate</string>
+    <string name="period">Period In Years</string>
+    <string name="make_chart">Make Chart</string>
+    <string name="all_is_required">All Fields are required</string>
+    <string name="wealth">Wealth</string>
+    <string name="added_interest">Added Interest:</string>
+    <string name="after">After</string>
+    <string name="year">Year</string>
+</resources>
